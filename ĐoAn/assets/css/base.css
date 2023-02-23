@@ -1,0 +1,39 @@
+:root{
+    --white-color:#fff;
+    --black-color:#000;
+    --primary-color: rgb(255, 195, 0);
+    --text-color:#bcbcbc;
+    --secord-color:#e6ff00;
+    --backgroud-color:#171326;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+.scale__ho:hover{
+    padding: 5px 1px ;
+    border-radius: 25%;
+    background-color: var(--secord-color);
+    color: var(--white-color);
+    transition: .5s;
+    text-decoration: none;
+
+}
+
+@keyframes scroll {
+    from{
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(80%);
+    }
+    
+}
