@@ -33,7 +33,24 @@
 
     to {
         opacity: 1;
-        transform: translateY(80%);
+        transform: translateY(2%);
     }
     
+}
+
+/* banner */
+.manual__btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual__btn:hover{
+    background: var(--primary-color);
+}
+#radio1:checked ~.frist{
+    margin-left: 0;
+}
+#radio2:checked ~.frist{
+    margin-left: -20%;
+}
+#radio3:checked ~.frist{
+    margin-left: -40%;
 }

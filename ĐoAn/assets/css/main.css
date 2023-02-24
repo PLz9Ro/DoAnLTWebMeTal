@@ -27,7 +27,6 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
-    overflow: hidden;
 }
 .header__nav {
     width: 75%;
@@ -93,7 +92,7 @@
     box-shadow: 4px 4px 13px -2px var(--primary-color) ;
     width: 35%;
     outline: none;
-    animation: scroll 1s ;
+    animation: scroll .5s ;
 }
 .navar__item:hover .sub__list{
     display: block;
@@ -128,4 +127,84 @@
     color: var(--white-color);
 }
 
+/* banner */
 
+.main__baner{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slide{
+    width: 500%;
+    height: 600px;
+    display: flex;
+}
+
+.slide input{
+    display: none;
+}
+
+.slide__img{
+    width: 20%;
+    transition: 1s;
+}
+
+.slide__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav__manual{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10%;
+}
+
+.manual__btn{
+    border: 2px solid var(--black-color);
+    padding: 5px;
+    border-radius: 50%;
+    transition: 1s;
+} 
+/* iconbox */
+.iconbox{
+    margin: 40px 0 ;
+}
+
+.iconbox__about{
+    text-align: center;
+}
+.iconbox__icon{
+    color: var(--primary-color);
+    margin:  0 auto;
+}
+.iconbox__icon i{
+    font-size: 40px;
+}
+.icon__header h2 {
+    color: var(--primary-color);
+    font-weight: 700;
+    padding-top: 15px;
+}
+
+.icon__header p{
+    color: var(--black-color);
+    font-weight: 600;
+    padding-top: -10px;
+}
+.iconbox__content{
+    font-size: 14px;
+    padding-top: 5px;
+}
