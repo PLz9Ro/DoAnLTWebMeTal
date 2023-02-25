@@ -5,6 +5,9 @@
     --text-color:#bcbcbc;
     --secord-color:#e6ff00;
     --backgroud-color:#171326;
+    --product__link-height:150px;
+    --product__btn-height:100px;
+    --product__container-height:calc(2900px-(var(--product__link-height)+var(--product__btn-height)));
 }
 
 
@@ -16,13 +19,15 @@
 }
 
 .scale__ho:hover{
-    padding: 5px 1px ;
-    border-radius: 25%;
+    padding: 5px 10px ;
     background-color: var(--secord-color);
     color: var(--white-color);
     transition: .5s;
     text-decoration: none;
-
+    border-top-right-radius:20px; 
+    border-top-left-radius:20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 @keyframes scroll {
@@ -53,4 +58,9 @@
 }
 #radio3:checked ~.frist{
     margin-left: -40%;
+}
+
+.container-height{
+    width: 100%;
+    height: 2900px;
 }
