@@ -388,6 +388,10 @@ ul.product__page
     position: absolute;
 }
 
+.hiden{
+    overflow: hidden;
+}
+
 .sp__link{
     width: 100%;
     height: var(--product__link-height);
@@ -421,7 +425,6 @@ ul.product__page
 .sp__items{
     height: 430px;
     width: 100%;
-    margin-top: 100px;
     display: flex;
 }
 .sp__item{
@@ -479,6 +482,11 @@ ul.product__page
     right: 0;
     top: 0;
     left: 90%;
+}
+.sp__item-flex{
+    display: flex;
+    flex-shrink: 0;
+    width: 198%;
 }
 
 .btn-left,.btn-right{
